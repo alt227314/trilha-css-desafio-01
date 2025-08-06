@@ -9,60 +9,60 @@ body {
   background-color: #000000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fafafa;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Estilos para títulos */
 h1, h2 {
-  font-weight: 700;
-  letter-spacing: 3.5px;
+  font-weight: 900;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 2.1rem;
-  color: #3399cc;
+  font-size: 2rem;
+  color: #33A8DB;
 }
 
 /* Parágrafos */
 p {
-  color: #f5f5f5;
+  color: #fff;
 }
 
 /* Espaçamento das seções */
 section {
-  margin: 90px auto;
+  margin: 100px auto;
 }
 
 /* Cabeçalho banner */
 .banner {
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(50, 170, 220, 0.25),
-      rgba(0, 0, 0, 0.65)
+      rgba(0, 0, 0, 0.6),
+      rgba(49, 168, 221, 0.2),
+      rgba(0, 0, 0, 0.6)
     ),
     url('../images/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 620px;
-  padding-top: 70px;
+  height: 600px;
+  padding-top: 60px;
   border-bottom: 1px solid rgba(51, 168, 219, 0.5);
 }
 
 .banner .banner-content {
-  color: #fefefe;
-  width: 620px;
+  color: #fff;
+  width: 600px;
   margin: 0 auto;
   text-align: center;
 }
 
 .banner .logo-container {
-  background-color: rgba(0, 0, 0, 0.23);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 260px;
   height: 260px;
-  margin: 0 auto 20px;
+  margin: 0 auto 16px;
   padding: 16px;
   border-radius: 50%;
 }
@@ -74,30 +74,30 @@ section {
 }
 
 .banner h1 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 900;
-  background: -webkit-linear-gradient(#3399cc, #1266b1);
-  -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  background: -webkit-linear-gradient(#33A8DB, #1472B7);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .banner p {
-  font-size: 1.3rem;
-  margin: 18px 0 26px;
+  font-size: 1.25rem;
+  margin: 16px 0 24px;
 }
 
 .banner .banner-content button {
-  color: #2ea4dd;
+  color: #31A8DD;
   font-weight: 700;
   font-size: 1rem;
-  padding: 16px 36px;
+  padding: 16px 32px;
   background-color: transparent;
   border-radius: 30px;
   border-style: solid;
   border-width: 1px;
   border-image-slice: 10;
-  border-image-source: linear-gradient(#3bb1d1, #1572b7);
+  border-image-source: linear-gradient(#3BA1CD, #1572B7);
   letter-spacing: 4px;
   text-transform: uppercase;
   cursor: pointer;
@@ -114,12 +114,12 @@ section {
   margin: 24px 0;
 }
 
-#course-content .modules-list .module-item {
-  background-color: #272727;
+#course-content .modules-list .module {
+  background-color: #252525;
   border-radius: 100px;
-  border: 1px solid #3399cc;
-  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.75);
-  color: #fefefe;
+  border: 1px solid #33A8DB;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+  color: #fff;
   margin-bottom: 24px;
   padding: 16px;
   width: 530px;
@@ -127,8 +127,8 @@ section {
   margin-right: auto;
 }
 
-#course-content .modules-list .module-item span {
-  color: #3399cc;
+#course-content .modules-list .module span {
+  color: #33A8DB;
 }
 
 /* Seção Transforme o Mundo */
@@ -142,16 +142,16 @@ section {
   padding: 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
 }
 
 #transform-world p {
-  color: #33a7db;
+  color: #f1f5f7;
   font-weight: 900;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   max-width: 250px;
-  text-shadow: 3px 2px #3399cc;
+  text-shadow: 3px 2px #0c0c0c;
   text-transform: lowercase;
 }
 
@@ -180,11 +180,11 @@ footer {
 
 footer .dio-logo {
   width: 300px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 footer a {
-  color: #3399cc;
+  color: #33A8DB;
   font-weight: 600;
   text-decoration: none;
 }
