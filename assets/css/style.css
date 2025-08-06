@@ -1,4 +1,4 @@
-/* Mini-reset direto no estilo */
+/* Reset básico aplicado globalmente */
 * {
   margin: 0;
   padding: 0;
@@ -6,137 +6,139 @@
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  line-height: 1.5;
+  color: #fafafa;
+  line-height: 1.6;
 }
 
-/* Títulos */
+/* Estilos para títulos */
 h1, h2 {
-  font-weight: bold;
-  letter-spacing: 4px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 2rem;
-  color: #33A8DB;
+  font-size: 2.1rem;
+  color: #3399cc;
 }
 
-/* Parágrafos padrão */
+/* Parágrafos */
 p {
-  color: white;
+  color: #f5f5f5;
 }
 
-/* Espaçamento entre seções */
+/* Espaçamento das seções */
 section {
-  margin: 100px auto;
+  margin: 90px auto;
 }
 
-/* Banner principal */
+/* Cabeçalho banner */
 .banner {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, .6), 
-      rgba(49, 168, 221, .2), 
-      rgba(0, 0, 0, .6)
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(50, 170, 220, 0.25),
+      rgba(0, 0, 0, 0.65)
     ),
     url('../images/banner.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
-  padding-top: 60px;
-  border-bottom: 1px solid #33A8DB80;
+  background-size: cover;
+  height: 620px;
+  padding-top: 70px;
+  border-bottom: 1px solid rgba(51, 168, 219, 0.5);
 }
 
 .banner .banner-content {
-  color: white;
-  width: 600px;
-  margin: auto;
+  color: #fefefe;
+  width: 620px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.banner .logo {
-  background-color: rgba(0, 0, 0, .2);
-  height: 260px;
+.banner .logo-container {
+  background-color: rgba(0, 0, 0, 0.23);
   width: 260px;
-  margin: auto;
-  border-radius: 50%;
+  height: 260px;
+  margin: 0 auto 20px;
   padding: 16px;
-  margin-bottom: 16px;
+  border-radius: 50%;
 }
 
-.banner .logo img {
+.banner .logo-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 900;
-  color: transparent;
-  background: -webkit-linear-gradient(#33A8DB, #1472B7);
-  background-clip: text;
+  background: -webkit-linear-gradient(#3399cc, #1266b1);
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .banner p {
-  font-size: 1.25rem;
-  margin: 16px 0 24px;
+  font-size: 1.3rem;
+  margin: 18px 0 26px;
 }
 
 .banner .banner-content button {
-  color: #31A8DD;
+  color: #2ea4dd;
+  font-weight: 700;
   font-size: 1rem;
-  font-weight: bold;
-  padding: 16px 32px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  padding: 16px 36px;
   background-color: transparent;
-  border-image: linear-gradient(#3BA1CD, #1572B7);
-  border-image-slice: 10;
   border-radius: 30px;
-  border-width: 1px;
   border-style: solid;
+  border-width: 1px;
+  border-image-slice: 10;
+  border-image-source: linear-gradient(#3bb1d1, #1572b7);
+  letter-spacing: 4px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
-/* Seção de Conteúdo */
+/* Conteúdo dos módulos */
 #course-content {
-  width: 800px;
+  max-width: 810px;
+  margin: 0 auto;
   text-align: center;
-  margin: auto;
 }
 
 #course-content .modules-list {
   margin: 24px 0;
 }
 
-#course-content .modules-list .module {
-  color: white;
-  width: 530px;
-  margin: 0 auto 24px;
-  border: 1px solid #33A8DB;
-  background-color: #252525;
-  padding: 16px;
+#course-content .modules-list .module-item {
+  background-color: #272727;
   border-radius: 100px;
-  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+  border: 1px solid #3399cc;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.75);
+  color: #fefefe;
+  margin-bottom: 24px;
+  padding: 16px;
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#course-content .modules-list .module span {
-  color: #33A8DB;
+#course-content .modules-list .module-item span {
+  color: #3399cc;
 }
 
 /* Seção Transforme o Mundo */
 #transform-world {
   height: 560px;
-  background-size: cover;
   background-image: url("../images/woman-code.png");
   background-attachment: fixed;
-  border-top: 1px solid #33A8DB80;
-  border-bottom: 1px solid #33A8DB80;
+  background-size: cover;
+  border-top: 1px solid rgba(51, 168, 219, 0.5);
+  border-bottom: 1px solid rgba(51, 168, 219, 0.5);
   padding: 200px;
   display: flex;
   align-items: center;
@@ -145,18 +147,19 @@ section {
 }
 
 #transform-world p {
+  color: #33a7db;
   font-weight: 900;
-  font-size: 2.5rem;
-  text-transform: lowercase;
+  font-size: 2.6rem;
   max-width: 250px;
-  text-shadow: 3px 2px #33A8DB;
+  text-shadow: 3px 2px #3399cc;
+  text-transform: lowercase;
 }
 
-/* Seção Desafios Profissionais */
+/* Seção de desafios profissionais */
 #professional-challenges {
+  margin: 0 auto;
+  max-width: 800px;
   text-align: center;
-  width: 800px;
-  margin: auto;
 }
 
 #professional-challenges img {
@@ -166,22 +169,22 @@ section {
 
 /* Rodapé */
 footer {
+  background-image: linear-gradient(
+    rgba(50, 168, 219, 0),
+    rgba(50, 168, 219, 0.15)
+  );
+  border-top: 1px solid rgba(51, 168, 219, 0.5);
   padding: 60px 0;
   text-align: center;
-  background-image: linear-gradient(
-    rgba(50, 168, 219, 0.0), 
-    rgba(50, 168, 219, 0.2)
-  );
-  border-top: 1px solid #33A8DB80;
 }
 
 footer .dio-logo {
   width: 300px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 footer a {
-  color: #33A8DB;
-  font-weight: bold;
+  color: #3399cc;
+  font-weight: 600;
   text-decoration: none;
 }
